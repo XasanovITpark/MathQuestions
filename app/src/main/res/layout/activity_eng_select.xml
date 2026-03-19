@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FA31E"
+    tools:context=".english.Eng_select">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@drawable/app_bar_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English Question Type"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintLeft_toRightOf="@+id/eng_sct_back"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/eng_sct_back"
+                android:layout_width="42dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/bacl_2"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.68" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/math_bg"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test turi tanlnang!"
+            android:textColor="#005704"
+            android:textSize="29dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/constraint"
+            app:layout_constraintLeft_toLeftOf="@+id/constraint"
+            app:layout_constraintRight_toRightOf="@+id/constraint"
+            app:layout_constraintTop_toTopOf="@+id/constraint"
+            app:layout_constraintVertical_bias="1" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/english_pc"
+            app:layout_constraintBottom_toBottomOf="@+id/constraint"
+            app:layout_constraintLeft_toLeftOf="@+id/constraint"
+            app:layout_constraintRight_toRightOf="@+id/constraint"
+            app:layout_constraintTop_toTopOf="@+id/constraint"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="0.5dp"
+        android:layout_marginEnd="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/eng_options_ts"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                app:cardCornerRadius="20dp"
+
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/eng_card_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#556b2f">
+
+                    <ImageView
+                        android:id="@+id/eng_option_png"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/remove_bg_en_wr"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_card_option"
+                        app:layout_constraintHorizontal_bias="0.018"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_card_option"
+                        app:layout_constraintRight_toRightOf="@+id/eng_card_option"
+                        app:layout_constraintTop_toTopOf="@+id/eng_card_option"
+                        app:layout_constraintVertical_bias="0.49" />
+
+                    <TextView
+                        android:id="@+id/math_card_txt"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ochiq test (Varinantsiz)"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6E9"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_card_option"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_card_option"
+                        app:layout_constraintRight_toRightOf="@+id/eng_card_option"
+                        app:layout_constraintTop_toTopOf="@+id/eng_card_option"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/eng_checking_card"
+
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="20dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/eng_checking_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#556b2f">
+
+                    <ImageView
+                        android:id="@+id/math_checking_png"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/rb_tr_fs"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_checking_ct"
+                        app:layout_constraintHorizontal_bias="0.018"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_checking_ct"
+                        app:layout_constraintRight_toRightOf="@+id/eng_checking_ct"
+                        app:layout_constraintTop_toTopOf="@+id/eng_checking_ct"
+                        app:layout_constraintVertical_bias="0.49" />
+
+                    <TextView
+                        android:id="@+id/math_checking_txt"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:text="To'g'ri yoki Yolg'on (True, False)"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6E9"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_checking_ct"
+                        app:layout_constraintHorizontal_bias="1"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_checking_ct"
+                        app:layout_constraintRight_toRightOf="@+id/eng_checking_ct"
+                        app:layout_constraintTop_toTopOf="@+id/eng_checking_ct"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/eng_opened_test_card"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eng_options_ts"
+                app:layout_constraintVertical_bias="0.05">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:id="@+id/eng_openTest_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#556b2f">
+
+                    <ImageView
+                        android:id="@+id/math_openTest_png"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/second_eng_opt"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_openTest_card"
+                        app:layout_constraintHorizontal_bias="0.03"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_openTest_card"
+                        app:layout_constraintRight_toRightOf="@+id/eng_openTest_card"
+                        app:layout_constraintTop_toTopOf="@+id/eng_openTest_card"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/math_card_txt1"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yopiq test (Varinantli)"
+                        android:textAlignment="center"
+                        android:textColor="#FAF6E9"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/eng_openTest_card"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintLeft_toLeftOf="@+id/eng_openTest_card"
+                        app:layout_constraintRight_toRightOf="@+id/eng_openTest_card"
+                        app:layout_constraintTop_toTopOf="@+id/eng_openTest_card"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
